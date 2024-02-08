@@ -38,15 +38,15 @@ col3,col4,col5 =st.columns(3)
 with col3:
     st.subheader("Sepal length VS Sepal width")
     fig3, ax3 = plt.subplots()
-    ax3.scatter(x=df['SepalLengthCm'],y=df['SepalWidthCm'])
+    ax3.scatter(x=df['sepal.length'],y=df['sepal.width'])
     st.pyplot(fig=fig3)
 
 with col4:
-    figure = px.scatter_3d(x=df['SepalLengthCm'],y=df['SepalWidthCm'],z=df['PetalLengthCm'])
+    figure = px.scatter_3d(x=df['sepal.length'],y=df['sepal.width'],z=df['petal.length'])
 with col5:
     st.subheader("Petal Length vs Petal Width")
     fig5, ax5 = plt.subplots()
-    ax5.scatter(x=df['PetalLengthCm'],y=df['PetalWidthCm'])
+    ax5.scatter(x=df['petal.length'],y=df['petal.width'])
     st.pyplot(fig=fig5)
 
 
