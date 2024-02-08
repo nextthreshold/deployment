@@ -46,7 +46,7 @@ with col4:
 with col5:
     st.subheader("Petal Length vs Petal Width")
     fig5, ax5 = plt.subplots()
-    ax5.scatter(x=df['petal.lengthy'],y=df['petal.width'])
+    ax5.scatter(x=df['petal.length'],y=df['petal.width'])
     st.pyplot(fig=fig5)
 
 
